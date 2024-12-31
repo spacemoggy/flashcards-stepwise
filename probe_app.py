@@ -1,5 +1,8 @@
+import pandas as pd
 from dash import Dash, html
+
 app = Dash(__name__)
+df = pd.read_csv('../supporting/wordList 2024-10-07.csv', encoding='latin1')
 
 #create a global variable to pass to the callback
 message = 'hello world'
